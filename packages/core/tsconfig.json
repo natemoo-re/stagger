@@ -1,0 +1,18 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "include": [
+    "src",
+    "types"
+  ],
+  "compilerOptions": {
+    "rootDir": "./",
+    "baseUrl": "./",
+    "paths": {
+      "*": [
+        "src/*",
+        "node_modules/*"
+      ]
+    },
+    "esModuleInterop": true
+  }
+}
