@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Basic Example</title>
+
+    <style>
+        [data-stagger] [style*="--i:"] {
+            animation-delay: calc(var(--wait, 0ms) + var(--delay, 0ms) * var(--i));
+            transition-delay: calc(var(--wait, 0ms) + var(--delay, 0ms) * var(--i));
+        }
+    </style>
+</head>
+<body>
+    <h1 data-stagger>Hello world!</h1>
+    <ul data-stagger data-stagger-delay="200ms" data-stagger-wait="200" class="list">
+        <li>Hello</li>
+        <li>World</li>
+        <li>!</li>
+    </ul>
+    <script src="./index.ts"></script>
+</body>
+</html>
