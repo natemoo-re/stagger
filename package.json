@@ -1,0 +1,15 @@
+{
+  "name": "example-basic",
+  "private": true,
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html --public-url /stagger/"
+  },
+  "devDependencies": {
+    "parcel-bundler": "^1.12.3",
+    "typescript": "^3.5.3"
+  },
+  "dependencies": {
+    "@stagger/core": "0.0.1"
+  }
+}

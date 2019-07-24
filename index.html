@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Basic Example</title>
+
+    <style>
+        [data-stagger] [style*="--i:"] {
+            animation-delay: calc(var(--wait, 0ms) + var(--delay, 0ms) * var(--i));
+            transition-delay: calc(var(--wait, 0ms) + var(--delay, 0ms) * var(--i));
+        }
+
+        h1 > div[data-stagger] > div {
+            opacity: 1;
+            transform: translateY(1em);
+            animation: enter 300ms cubic-bezier(0.23, 1, 0.320, 1) forwards;
+        }
+
+        @keyframes enter {
+            to {
+                opacity: 1;
+                transform: translateY(0)
+            }
+        }
+
+        @keyframes exit {
+            to {
+                opacity: 0;
+                transform: translateY(-1em)
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>@stagger/</h1>
+    </header>
+
+    <script src="./index.ts"></script>
+</body>
+</html>
