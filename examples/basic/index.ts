@@ -8,4 +8,4 @@ const list = document.querySelector<HTMLElement>('.list')!;
 
 // console.log(dom.children(list));
 
-stagger({ delay: 100 });
+stagger(h1, { delay: 100 });

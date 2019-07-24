@@ -1,8 +1,8 @@
 {
-    "name": "@stagger/core",
+    "name": "@stagger/react",
     "version": "0.0.1",
     "main": "dist/index.js",
-    "module": "dist/core.esm.js",
+    "module": "dist/react.esm.js",
     "typings": "dist/index.d.ts",
     "files": [
         "dist"
@@ -11,5 +11,12 @@
         "start": "../../node_modules/.bin/tsdx watch",
         "build": "../../node_modules/.bin/tsdx build",
         "test": "../../node_modules/.bin/tsdx test"
+    },
+    "dependencies": {
+        "@stagger/core": "^0.0.1",
+        "react": "^16.8.6"
+    },
+    "devDependencies": {
+        "@types/react": "^16.8.23"
     }
 }

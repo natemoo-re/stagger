@@ -30,7 +30,6 @@ const init = (element: HTMLElement, options: Partial<Options> = {}) => {
             i++;
         }
     })
-    element.style.setProperty('visibility', 'visible');
 }
 
 const querySelector = (options: Partial<Options> = {}) => {
